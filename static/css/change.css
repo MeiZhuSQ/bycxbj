@@ -1,0 +1,661 @@
+/*首页公司简介部分样式*/
+
+.main-title .h1 {
+	font-size: 35px;
+	color: #1a1a1a;
+}
+
+.main-title .h1 .blue-line {
+	color: #0b92e6;
+	font-size: 40px;
+	padding-right: 10px;
+}
+
+.main-title .h1 .english-name {
+	font-size: 18px;
+	color: #333;
+	padding-left: 10px;
+}
+
+.sum-apply p {
+	font-size: 16px;
+	color: #333;
+	text-align: left;
+	line-height: 30px;
+	text-indent: 40px;
+}
+
+.number-wrapper {
+	margin-top: 5px;
+}
+
+.number-wrapper img {
+	width: 100%;
+}
+
+
+/*首页服务理念部分样式*/
+
+.our-whyus-item {
+	height: 260px;
+	margin-top: 5px;
+}
+
+.our-whyus-item p {
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+
+
+/*首页我们的优势部分样式*/
+
+.our-news {
+	padding: 0;
+}
+
+.goodness-title {
+	height: 700px;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	background: -webkit-linear-gradient(top, #0076d1, #5db8ff);
+	background: -moz-linear-gradient(top, #0076d1, #5db8ff);
+	background: -o-linear-gradient(top, #0076d1, #5db8ff);
+	background: -ms-linear-gradient(top, #0076d1, #5db8ff);
+}
+
+.goodness-contact-box {
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+.goodness-h1 .h1p {
+	color: #fff;
+	text-align: center;
+	font-size: 35px;
+	padding: 58px 0 20px 0;
+}
+
+.goodness-english-name {
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.goodness-english-name .span1 {
+	padding-bottom: 20px;
+}
+
+.goodness-content {
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.media-heading {
+	color: #fff;
+}
+
+
+/*footer部分样式*/
+
+.pc-footer-item {
+	width: 11%;
+}
+
+
+/*关于中正页面*/
+
+
+/*公司概况页面*/
+
+.survey-wrapper {
+	background: #fff;
+	height: 586px;
+	border: 1px solid #f2f2f2;
+	margin-top: 5px;
+}
+
+.survey-wrapper .number-wrapper {
+	margin-top: 0;
+}
+
+.survey .surver-title {
+	color: #1A1A1A;
+	font-size: 24px;
+	padding-top: 40px;
+}
+
+.survey .survey-p {
+	line-height: 30px;
+	margin-top: 24px;
+	padding: 0 20px 0 20px;
+}
+
+
+/*我们的团队部分样式*/
+
+.card-area .team-item {
+	float: left;
+	position: relative;
+	list-style: none;
+	width: 33.333%;
+}
+
+.card-area .team-item img {
+	width: 100%;
+	padding: 5px;
+}
+
+.team {
+	position: relative;
+}
+
+.team .team-title {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	bottom: 15px;
+	left: 35%;
+}
+
+
+/*服务项目页面*/
+
+
+/*服务项目部分样式*/
+
+.server-parject {
+	padding: 50px 0 0 0;
+}
+
+.server-item {
+	position: relative;
+}
+
+.server-item .server-title {
+	position: absolute;
+	top: 45%;
+	left: 35%;
+	color: #fff;
+	font-size: 24px;
+}
+
+
+/*服务依据部分样式*/
+
+.server-section {
+	padding: 0;
+	background: #fff;
+}
+
+.server-basis {
+	padding: 70px 0;
+	text-align: center;
+}
+
+.server-basis p {
+	color: #1A1A1A;
+	font-size: 16px;
+}
+
+
+/*案例展示页面*/
+
+
+/*区域案例部分样式*/
+.case-show-container{
+	margin-top: 40px;
+}
+.case-item {
+	padding: 5px;
+}
+
+.case-item .case-wapper {
+	background: #E6E6E6;
+	border: 1px solid #E1E1E1;
+}
+
+.case-item img {
+	width: 100%;
+}
+
+.case-wapper .case-title {
+	font-size: 24px;
+	color: #1A1A1A;
+	padding-bottom: 15px;
+}
+
+
+/*现场案例部分样式*/
+.field-case-title{
+	padding: 0 0 20px 0;
+}
+.field-case-item {
+	padding: 5px;
+}
+
+.field-case-item img {
+	width: 100%;
+}
+
+.field-case-wapper {
+	position: relative;
+	cursor: pointer;
+}
+
+.field-case-wapper .wapper-word{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	display: none;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+
+.field-case-wapper:hover .wapper-word{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	display: block;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	line-height: 218px;
+}
+
+
+/*政策法规页面*/
+
+/*政策法规部分样式*/
+.policy-container-row .main-title{
+	padding-top: 40px;
+}
+.policy-lable{
+	padding: 10px 0;
+}
+.policy-lable .policy-title{
+	color: #1A1A1A;
+	font-size: 16px;
+}
+.policy-list .btn{
+	
+}
+.btn-outline-blues{
+    color: #0ba1e4;
+    background: transparent;
+    border-color: #0ba1e4;
+}
+.btn-outline-blues:hover{
+    color: #fff;
+    text-shadow: none;
+    background-color: #0ba1e4;    
+}
+.btn-outline-orange{
+    color: #f85623;
+    background: transparent;
+    border-color: #f85623;
+}
+.btn-outline-orange:hover{
+    color: #fff;
+    text-shadow: none;
+    background-color: #f85623;    
+}
+.policy-list .time-title{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    color: #999;
+    font-size: 14px;
+}
+.policy-list .vi-time-title{
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    color: #999;
+    font-size: 14px;
+}
+
+
+/*招标公告页面*/
+
+/*招标公告部分样式*/
+.zhaobiao-title{
+	padding: 30px 0 20px 0;
+}
+.zhaobiao-content{
+	padding: 30px 0 30px 0;
+}
+.zhaobiao-content .zhaobiao-content-left{
+	font-size: 20px;
+	color: #1A1A1A;
+}
+.zhaobiao-content .zhaobiao-content-right{
+	color: #666;
+    font-size: 14px;
+    text-align: right;
+}
+.zhaobiao-content .zhaobiao-content-vright{
+	color: #666;
+    font-size: 14px;
+}
+
+/*分页部分样式*/
+.page-list{
+	margin-top: 20px;
+	text-align: right;
+}
+
+/*中标公告部分样式*/
+.win-content{
+	padding: 20px 0 10px 0;
+}
+.win-content .win-content-left{
+	font-size: 18px;
+	color: #1A1A1A;
+}
+.win-content .win-content-right{
+	color: #666;
+    font-size: 14px;
+    text-align: right;
+}
+.win-content .win-content-vright{
+	color: #666;
+    font-size: 14px;
+}
+.win-detail-content{
+	font-size: 16px;
+	line-height: 30px;
+	color: #666;
+}
+
+
+/*动态资讯页面*/
+/*动态资讯部分样式*/
+.info-news-item{
+	padding: 20px 0 20px 0;
+	border-bottom: 1px dashed #C1C1C1;
+}
+.info-news-item .infor-title{
+	color: #1A1A1A;
+	font-size: 24px;
+}
+.info-news-item .info-time{
+	color: #666666;
+	font-size: 16px;
+}
+.info-news-item .info-content{
+	color: #333333;
+	font-size: 16px;
+}
+.info-news-item .info-left a{
+	height: 122px;
+}
+.info-news-item .info-img{
+	height: 112px;
+}
+
+
+/*关于我们页面*/
+
+/*联系我们部分样式*/
+.contact-title{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.content-explain{
+	padding-bottom: 10px;
+}
+.content-explain p{
+	line-height: 30px;
+}
+.contact-three-img{
+	padding-top: 20px;
+}
+
+.our-whyus{
+    background-color: #e1e1e1;
+}
+
+.content-three-item{
+    text-align: center;
+    background-color: #fafafa;
+    border:1px dashed #c1c1c1;
+    height: 250px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.content-three-item p{
+	font-size: 16px;
+	color: #333;
+}
+.content-three-item > .content-image{
+    padding: 40px 0 40px 0;
+}
+.content-three-item .glyphicon{
+    color: #0ba1e4;
+    font-size: 80px;
+    line-height: 1.5em;
+}
+.content-three-item h3{
+    line-height: 1.5em;
+}
+.our-whyus-item p{
+    line-height: 1.5em;
+}
+
+/*详细地址部分样式*/
+.map-box{
+	height: 500px;
+}
+
+/*意见反馈部分样式*/
+ .p-sugget-form{
+	height: 630px;
+	background: #E6E6E6;
+	border-radius: 5px;
+}
+.v-sugget-form{
+	height: 800px;
+	background: #E6E6E6;
+	border-radius: 5px;
+}
+.suggest-address .message-board{
+	font-size: 30px;
+	color: #1A1A1A;
+	padding: 40px;
+}
+.suggest-address .message-three{
+	padding: 0 0 10px 27px;
+}
+.suggest-address .message-three p{
+	font-size: 16px;
+	color: #333;
+}
+.input-list{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.input-list input{
+	width: 300px;
+	background: #E6E6E6;
+	outline: none;
+	border:1px solid #ccc;
+	height: 40px;
+	border-radius: 5px;
+	padding: 0 10px 0 10px;
+}
+.input-list label{
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+}
+.suggest-textarea{
+	padding-top: 20px;
+}
+.suggest-textarea label{
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+	float: left;
+	padding-left: 15px;
+}
+.suggest-textarea textarea{
+	background: #E6E6E6;
+	outline: none;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+}
+.suggest-btn{
+	text-align: right;
+	margin-top: 20px;
+}
+.suggest-btn .submit-btn{
+	padding: 10px 20px 10px 20px;
+	background: #0b92e6;
+	color: #fff;
+	font-size: 16px;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+	margin-right: 120px;
+}
+
+
+/*团队介绍-话务部页面*/
+.team-one-title{
+	text-align: center;
+}
+
+.team-one-title .team-one-h3{
+	font-size: 26px;
+	color: #1A1A1A;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.team-introduce p{
+	font-size: 16px;
+	color: #333;
+	line-height: 30px;
+}
+
+/*会务部专业团队部分样式*/
+.team-one-thing .team-card-item{
+	border: 1px dashed #ccc;
+	position: relative;
+	border-radius: 5px;
+	height: 155px;
+	margin: 5px 2px 0 2px;
+	width: 19.6%;
+}
+.team-blue-line{
+	position: absolute;
+	width: 100px;
+	height: 1px;
+	background: #0f9ef6;
+	left: 62px;
+}
+.team-blue-vline{
+	position: absolute;
+	width: 100px;
+	height: 1px;
+	background: #0f9ef6;
+	left: 34%;
+}
+.team-card-h3{
+	font-size: 20px;
+	color: #1A1A1A;
+}
+.team-card-item .team-card-p{
+	font-size: 16px;
+	color: #333;
+	padding: 10px;
+}
+
+
+/*区域案例页面*/
+.case-detail-banner img{
+	height: 380px;
+}
+.case-news-item{
+	padding: 20px 0 20px 0;
+	border-bottom: 1px dashed #C1C1C1;
+}
+.case-news-item .case-detail-title{
+	color: #1A1A1A;
+	font-size: 24px;
+}
+
+.case-right-content .case-content{
+	color: #333;
+	font-size: 16px;
+	margin-top: 20px;
+}
+.case-news-item .case-left a{
+	height: 122px;
+}
+.case-news-item .case-img{
+	height: 112px;
+}
+
+/*动态资讯详情页面*/
+.team-one-samll{
+	/*text-align: center;*/
+	padding-bottom: 20px;
+}
+.team-one-samll span{
+	color: #666;
+	font-size: 16px;
+	text-align: center;
+}
+.info-introduce{
+	padding-bottom: 90px;
+}
+.info-introduce p{
+	font-size: 16px;
+	color: #333;
+	line-height: 30px;
+}
+.span-two  label{
+	padding-left: 45px;
+}
+
+/*招标详情页面*/
+.zhaobiao-table{
+	text-align: center;
+}
+.zhaobiao-table th{
+	text-align: center;
+	font-weight: normal;
+	padding: 10px 0;
+}
+.zhaobiao-table td{
+	padding: 10px 0;
+}
+.zhaobiao-introduce p{
+	font-size: 16px;
+	color: #333;
+	line-height: 30px;
+}
+
+/*中标详情页面*/
+.zhongbiao-introduce{
+	padding-bottom: 150px;
+}
+.zhongbiao-introduce p{
+	font-size: 16px;
+	color: #333;
+	line-height: 30px;
+}
