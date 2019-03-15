@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="renderer" content="webkit">
+		<title>中正物联</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link href="static/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="shortcut icon" href="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3620475968,2130963350&fm=27&gp=0.jpg" type="image/x-icon" />
+		<link href="static/css/common.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="static/css/change.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=yo1HWWWzDg3HE2APFDWhwSAGZKX6GYUi"></script>
+		<script src="static/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!-- <!-- 整站通用的头部及导航条 -->
+		<div id="header">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+						<!--<a class="navbar-brand" style="padding:10px 0 0 10px;" href="index.html"><img alt="Brand" style="max-width:200px;height: 35px;" src="static/picture/logo.png"></a>-->
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="about.html">关于中正</a>
+							</li>
+							<li>
+								<a href="serviceItems.html">服务项目</a>
+							</li>
+							<li>
+								<a href="caseShow.html">案例展示</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">招标服务</a>
+								<ul class="dropdown-menu" style="background: rgba(255,255,255,0.5);">
+									<li style="padding: 10px;text-align: center;">
+										<a href="zhaobiao.html">招标公告</a>
+									</li>
+									<li style="padding: 10px;text-align: center;">
+										<a href="zhongbiao.html">中标公告</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="policy.html">政策法规</a>
+							</li>
+							<li>
+								<a href="information.html">动态资讯</a>
+							</li>
+							<li class="active">
+								<a href="about.html">关于我们<span class="sr-only">(current)</span></a>
+								<p class="line-top hidden-xs"></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- 全屏轮播图 -->
+		<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="static/picture/abanner.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 全屏轮播图 -->
+
+		<div class="main-container">
+			<div class="container">
+				<div class="row main-container-row" style="position: relative">
+					<!--联系我们-->
+					<div class="col-sm-12 contact-main">
+						<div class="main-title contact-title">
+							<h2 class="h1"><span class="blue-line">|</span>联系我们<span class="english-name">contact us</span></h2>
+						</div>
+						<div class="col-sm-12 content-explain">
+							<p>走进社区，服务于广大业主，为政府、业委会排忧解难，市场的需求年年递增，我们云耐信息始终保持着健康、良好、稳步、持续的发展势头。</p>
+						</div>
+						<div class="contact-three-img">
+							<div class="col-sm-4">
+								<div class="content-three-item">
+									<img class="content-image" src="static/picture/aboutUS-icon1.png" />
+									<p>联系电话：0571-88387680</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="content-three-item">
+									<img class="content-image" src="static/picture/aboutUS-icon2.png" />
+									<p>公司地址：杭州市下城区善贤路4号</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="content-three-item">
+									<img class="content-image" src="static/picture/aboutUS-icon3.png" />
+									<p>电子邮箱：wyzxlyl@163.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--联系我们-->
+					<!--详细地址-->
+					<div class="content-map">
+					    <div class="col-sm-12 main-title contact-title">
+						<h2 class="h1"><span class="blue-line">|</span>详细地址<span class="english-name">detailed address</span></h2>
+						</div>
+						<!--地图显示-->
+						<div class="col-sm-12 map-box" id="allmap"></div>
+					</div>
+					<!--详细地址-->
+					<!--意见反馈-->
+					<div class="suggest-main">
+						<div class="col-sm-12 main-title contact-title">
+						   <h2 class="h1"><span class="blue-line">|</span>意见反馈<span class="english-name">suggestion feedback</span></h2>
+					    </div>
+					    <!--PC端显示-->
+					    <div class="col-sm-12 p-sugget-form hidden-xs">
+					    	<div class="row suggest-address">
+					    		<h2 class="message-board">留言板</h2>
+					    		<div class="message-three">
+					    			<p class="col-sm-4">
+					    			电话：0571-88387680
+						    		</p>
+						    		<p class="col-sm-4">
+						    			地址：杭州市下城区善贤路4号3楼351室
+						    		</p>
+						    		<p class="col-sm-4">
+						    			邮箱：wyzxlyl@163.com
+						    		</p>
+					    		</div>
+					    	</div>
+					    	<div class="col-sm-12 suggest-input">
+					    		<div class="col-sm-6 input-list">
+					    			<label>姓名：</label>
+					    			<input type="text" id="username" name="username" placeholder="请输入您的姓名" />
+					    			<span class="prompt1" style="color: red;"></span>
+					    		</div>
+					    		<div class="col-sm-6 input-list">
+					    			<label>邮箱：</label>
+					    			<input type="" name="mailbox" id="mailbox" placeholder="请输入您的邮箱" />
+					    			<span class="prompt2" style="color: red;"></span>
+					    		</div>
+					    	</div>
+					    	<div class="col-sm-12 suggest-textarea">
+					    		<label class="sol-sm-2">留言：</label>
+					    		<textarea class="col-sm-10" placeholder="请留下您宝贵的意见..." name="message" id="message" cols="30" rows="10"></textarea>
+					    		<p class="prompt3 col-sm-12" style="color: red;padding: 10px 0 0 63px;"></p>
+					    	</div>
+					    	<div class="col-sm-12 suggest-btn">
+					    		<button class="submit-btn" id="btn">确认提交</button>
+					    	</div>
+					    </div>
+					    <!--手机端显示-->
+					    <div class="col-sm-12 v-sugget-form visible-xs-block">
+					    	<div class="row suggest-address">
+					    		<h2 class="message-board">留言板111</h2>
+					    		<div class="message-three">
+					    			<p class="col-sm-4">
+					    			电话：0571-88387680
+						    		</p>
+						    		<p class="col-sm-4">
+						    			地址：杭州市下城区善贤路4号3楼351室
+						    		</p>
+						    		<p class="col-sm-4">
+						    			邮箱：wyzxlyl@163.com
+						    		</p>
+					    		</div>
+					    	</div>
+					    	<div class="col-sm-12 suggest-input">
+					    		<div class="col-sm-6 input-list">
+					    			<label>姓名：</label>
+					    			<input type="text" id="username" name="username" placeholder="请输入您的姓名"/>
+					    			<span class="prompt1" style="color: red;"></span>
+					    		</div>
+					    		<div class="col-sm-6 input-list">
+					    			<label>邮箱：</label>
+					    			<input type="" name="mailbox" id="mailbox" placeholder="请输入您的邮箱"/>
+					    			<span class="prompt2" style="color: red;"></span>
+					    		</div>
+					    	</div>
+					    	<div class="col-sm-12 suggest-textarea">
+					    		<label class="sol-sm-2">留言：</label>
+					    		<textarea class="col-sm-10" placeholder="请留下您宝贵的意见..." name="message" id="message" cols="30" rows="10"></textarea>
+					    		<p class="prompt3 col-sm-12" style="color: red;padding: 10px 0 0 63px;"></p>
+					    	</div>
+					    	<div class="col-sm-12 suggest-btn">
+					    		<button class="submit-btn">确认提交</button>
+					    	</div>
+					    </div>
+					</div>
+					<!--意见反馈-->
+					<p class="hidden-xs" id="right-line"></p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			/** 响应式sidebar 通用版块 **/
+			$(function() {
+				//页面加载时初始化
+				var sidebar = $('#sidebar');
+				var sidebarContent = $('#sidebarContent');
+				var sidebarBg = $('#sidebar-bg');
+
+				var navHeight = (window.innerWidth < 768) ? 0 : 82;
+				//点击显示菜单按钮
+				$('#slider-menu').click(function(event) {
+					if(sidebar.is(':hidden')) {
+						sidebar.show();
+						sidebarBg.css({
+							"position": "fixed",
+							"top": 0,
+							"left": 0,
+							"display": "block",
+							"width": "100%",
+							"height": "100%",
+							"z-index": 1090,
+							"background-color": "rgba(0,0,0,0.5)"
+						});
+					} else {
+						sidebar.hide();
+						sidebarBg.hide();
+					}
+				});
+				//如果是手机屏幕, 点周空白处隐藏菜单
+				sidebarBg.click(function() {
+					sidebar.hide();
+					sidebarBg.hide();
+				});
+
+				//浮动菜单函数
+				var flowMenu = function(validHeight) {
+					if($('.main-container-row').offset().top < $(window).scrollTop() + navHeight) {
+						//console.log('跑出去了');
+						sidebar.css({
+							"position": "fixed",
+							"width": sidebar.parent().width(),
+							"height": validHeight,
+							//"top" : $(window).scrollTop()+navHeight-$('.main-container-row').offset().top,
+							"top": navHeight
+						});
+					} else {
+						sidebar.css({
+							"position": "relative",
+							"width": sidebar.parent().width(),
+							"height": validHeight,
+							"top": ""
+						});
+					}
+				}
+
+				//视口改变时
+				$(window).resize(function() {
+					navHeight = (window.innerWidth < 768) ? 0 : 82;
+					sidebar.css({
+						"width": sidebar.parent().width()
+					});
+					if(window.innerWidth >= 768) {
+						sidebar.show();
+						sidebarBg.hide();
+						var validHeight = $('.main-container-row').offset().top + $('.main-container-row').outerHeight() - $(window).scrollTop() - navHeight;
+						flowMenu(validHeight);
+					} else {
+						sidebar.hide();
+						sidebarBg.hide();
+					}
+				});
+				//页面滚动时
+				$(window).scroll(function() {
+					var validHeight = $('.main-container-row').offset().top + $('.main-container-row').outerHeight() - $(window).scrollTop() - navHeight;
+					if(window.innerWidth >= 768) {
+						flowMenu(validHeight);
+					}
+				});
+			});
+			/** 响应式sidebar 通用版块 **/
+		</script>
+		<!-- 返回顶部滑块 -->
+		<div id="clan-slider">
+			<ul>
+				<li class="hidden-xs">
+					<a id="slider-phone" href="javascript:void(0);"></a>
+					<div class="clan-slider-tips">
+						0571-88387680
+					</div>
+				</li>
+				<li class="hidden-xs">
+					<a id="slider-wechat" href="javascript:void(0);"></a>
+					<div class="clan-slider-tips-wechat">
+						<img src="static/picture/wechat.png">
+					</div>
+				</li>
+				<li>
+					<a id="slider-goTop" href="javascript:void(0);"></a>
+				</li>
+			</ul>
+		</div>
+		<!-- 返回顶部滑块 -->
+		<!-- 整站通用的尾部 -->
+		<div id="sidebar-bg" style="display: none;"></div>
+
+		<!-- pc通用页脚 -->
+		<div id="footer" class="hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>公司首页</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='index.html'">公司简介</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='index.html'">服务理念</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='index.html'">我们的服务</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='index.html'">我们的优势</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>关于中正</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='about.html'">公司概况</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='about.html'">公司团队</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>服务项目</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='serviceItems.html'">服务内容</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='serviceItems.html'">服务依据</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>案例展示</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='caseShow.html'">区域案例</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='caseShow.html'">现场案例</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>招标服务</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='zhaobiao.html'">招标公告</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='zhongbiao.html'">中标公告</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>政策法规</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='policy.html'">政策资讯</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>动态资讯</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='information.html'">新闻资讯</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-list">
+							<h4>联系我们</h4>
+							<ul>
+								<li>
+									<a onclick="window.location.href='aboutUS.html'">公司电话</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='aboutUS.html'">公司地址</a>
+								</li>
+								<li>
+									<a onclick="window.location.href='aboutUS.html'">留言我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item pc-footer-item">
+						<div class="footer-wechat">
+							<img class="img-responsive" src="static/picture/wechat.png">
+							<p>微信公众号
+								<sapn class="hidden-sm">:</sapn>邻里在线</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--手机端显示版面-->
+		<!--<div id="footer" class="visible-xs-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>公司首页</h4>
+							<ul>
+								<li>
+									<a href="" target="_blank">公司简介</a>
+								</li>
+								<li>
+									<a href="">服务理念</a>
+								</li>
+								<li>
+									<a href="">我们的服务</a>
+								</li>
+								<li>
+									<a href="">我们的优势</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>关于中正</h4>
+							<ul>
+								<li>
+									<a href="">公司概况</a>
+								</li>
+								<li>
+									<a href="">公司团队</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>服务项目</h4>
+							<ul>
+								<li>
+									<a href="">服务内容</a>
+								</li>
+								<li>
+									<a href="">服务依据</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>案例展示</h4>
+							<ul>
+								<li>
+									<a href="">区域案例</a>
+								</li>
+								<li>
+									<a href="">现场案例</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>招标服务</h4>
+							<ul>
+								<li>
+									<a href="">招标公告</a>
+								</li>
+								<li>
+									<a href="">中标公告</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>政策法规</h4>
+							<ul>
+								<li>
+									<a href="">最新上传</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>动态资讯</h4>
+							<ul>
+								<li>
+									<a href="">新闻资讯</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-list">
+							<h4>联系我们</h4>
+							<ul>
+								<li>
+									<a href="">公司电话</a>
+								</li>
+								<li>
+									<a href="">公司地址</a>
+								</li>
+								<li>
+									<a href="">留言我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-2 footer-item">
+						<div class="footer-wechat">
+							<img class="img-responsive" src="static/picture/wechat.png">
+							<p>微信公众号
+								<sapn class="hidden-sm">:</sapn>邻里在线</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>-->
+
+		<div id="copyright" class="hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>杭州云耐信息技术有限公司 版权所有 网络经营许可证
+							<a target="_blank" href="javascript:void(0);">京ICP备 15041596号-3</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 通用页脚 -->
+
+		<!-- 手机端底部 -->
+		<div id="mob-bottom" class="visible-xs-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 mob-bottom-item">
+						<p>杭州云耐信息技术有限公司 版权所有 网络经营许可证
+							<a target="_blank" href="javascript:void(0);">京ICP备 15041596号-3</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 手机端底部 -->
+		<!-- 整站通用的尾部 -->
+		
+		<script type="text/javascript" src="static/js/common.js"></script>
+		<script type="text/javascript">
+			// 百度地图API功能
+			var map = new BMap.Map("allmap");    // 创建Map实例
+			map.centerAndZoom(new BMap.Point(120.179399, 30.320485), 11);  // 初始化地图,设置中心点坐标和地图级别
+			var local = new BMap.LocalSearch(map, {
+		          renderOptions: {map: map, panel: 'r-result'}
+		        })
+		        local.search('杭州云耐信息技术有限公司')
+			  
+			map.setCurrentCity("杭州");          // 设置地图显示的城市 此项是必须设置的
+			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+			(function(){
+			$("#btn").click(function(){
+				var username = $('#username').val()
+				var mailbox = $('#mailbox').val()
+				var message = $('#message').val()
+				var reg = /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/
+				if(username.length==0){
+					$('.prompt1').html('姓名不能为空')
+					return false;
+				}else {
+					$('.prompt1').html('')
+				}
+				
+				if(mailbox.length==0){
+					$('.prompt2').html('邮箱不能为空')
+					return false;
+				}else if(!reg.test(mailbox)){
+					$('.prompt2').html('邮箱格式错误')
+					return false;
+				}else {
+					$('.prompt2').html('')
+				}
+				
+				if(message.length==0){
+					$('.prompt3').html('留言内容不能为空')
+					return false;
+				}else{
+					$('.prompt3').html('')
+				}
+			})
+		})()
+			
+		</script>
+	</body>
+
+</html>
