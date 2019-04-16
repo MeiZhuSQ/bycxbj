@@ -1,18 +1,6 @@
 /**通用的JS**/
 //通用返回顶部
 $(function() {
-	//百度自动推送
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-	
 	//首先将#back-to-top隐藏
 	$("#slider-goTop").hide();
 	//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
@@ -40,3 +28,17 @@ $(function() {
 		}
 	);
 });
+
+//百度自动推送	
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
